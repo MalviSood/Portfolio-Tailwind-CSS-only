@@ -1,1 +1,3 @@
-# Portfolio-Tailwind-CSS-only
+## 📝 My Portfolio Website – Build Experience
+
+Building this portfolio website was an exciting and insightful experience. I started by designing it using plain HTML, CSS, and JavaScript, then transitioned it into a fully responsive Tailwind CSS project. The process helped me understand utility-first CSS, responsive design principles, and how to cleanly organize content sections like certifications, technical and non-technical achievements, and projects. I integrated Font Awesome for iconography and ensured each section was styled to reflect my personal branding. This project not only improved my frontend development skills but also gave me confidence in building professional, modern web interfaces.
