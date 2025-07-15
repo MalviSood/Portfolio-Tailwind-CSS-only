@@ -3,100 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Malvi Sood | Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>body { font-family: 'Poppins', sans-serif; }</style>
 </head>
-<body class="overflow-x-hidden bg-gray-50 text-gray-900">
 
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between flex-wrap bg-black text-white px-6 py-4">
-    <div class="text-2xl font-bold">My Portfolio</div>
-    <ul class="flex flex-wrap gap-4 text-sm md:text-base">
-      <li><a href="#home" class="hover:text-teal-400">Home</a></li>
-      <li><a href="#about" class="hover:text-teal-400">About</a></li>
-      <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
-      <li><a href="#achievements" class="hover:text-teal-400">Achievements</a></li>
-      <li><a href="#certifications" class="hover:text-teal-400">Certifications</a></li>
-      <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
-    </ul>
-  </nav>
+<body class="bg-black text-white">
 
-  <!-- Home Section -->
-  <section id="home" class="text-center px-4 py-20 bg-gradient-to-br from-teal-400 to-blue-500 text-white">
-    <h1 class="text-3xl md:text-5xl font-bold mb-4">Hi, I'm a CSE (AI/ML) Student</h1>
-    <p class="text-lg md:text-xl">I love building web apps & Arduino projects!</p>
-  </section>
+  <!-- Header -->
+  <header id="header" class="w-full h-screen bg-cover bg-center" style="background-image:url('images/home1.png')">
+    <div class="px-10 py-5 md:px-20">
+      <nav class="flex items-center justify-between">
+        <img src="images/logo.jpg" alt="Malvi Sood" class="h-36 w-80" />
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="#header" class="relative hover:text-pink-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600 after:transition-all">Home</a></li>
+          <li><a href="#about" class="relative hover:text-pink-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600 after:transition-all">About</a></li>
+          <li><a href="#techCert" class="relative hover:text-pink-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600 after:transition-all">Certifications</a></li>
+          <li><a href="#projs" class="relative hover:text-pink-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600 after:transition-all">Projects</a></li>
+          <li><a href="#contact" class="relative hover:text-pink-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600 after:transition-all">Contact Me</a></li>
+        </ul>
+      </nav>
 
-  <!-- About Me -->
-  <section id="about" class="px-4 py-10 md:px-10 text-center md:text-left">
-    <h2 class="text-2xl md:text-4xl font-semibold mb-4">About Me</h2>
-    <p class="text-sm md:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
-      I'm a first-year B.Tech CSE (AI/ML) student, passionate about web development, automation using Arduino, and creative project building. I actively participate in clubs like Coding Ninjas, 10X, and editorial groups.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="px-4 py-10">
-    <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-white shadow-lg rounded-2xl p-4">
-        <h3 class="text-lg font-semibold mb-2">Humidity Sensor</h3>
-        <p class="text-sm">An Arduino-based real-time humidity sensor with LCD display output.</p>
+      <div class="mt-52 ml-20 text-3xl">
+        <p class="text-xl">Engineering Student</p>
+        <h1 class="text-6xl font-bold mt-5">Hi, I'm <span class="text-pink-600">Malvi Sood</span><br> From Himachal Pradesh</h1>
       </div>
-      <div class="bg-white shadow-lg rounded-2xl p-4">
-        <h3 class="text-lg font-semibold mb-2">Personal Portfolio</h3>
-        <p class="text-sm">A responsive portfolio website using HTML, CSS, JavaScript, and Tailwind CSS.</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-10 md:px-20 text-gray-400">
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full md:w-1/3">
+        <img src="images/me.jpg" alt="Malvi Sood" class="mt-12 w-full max-w-md rounded-xl" />
+      </div>
+      <div class="w-full md:w-2/3 md:pl-10">
+        <h2 class="text-5xl font-semibold text-white">About <span class="text-pink-600">Me</span></h2>
+        <p class="mt-6 leading-relaxed">
+          Hi, I am Malvi Sood, a BTech student in Computer Science and Engineering with a specialization in
+          Artificial Intelligence and Machine Learning. I am from the scenic state of Himachal Pradesh, and I
+          am someone who finds joy in curiosity and constant learning.
+          <br><br>
+          I am passionate about web development and software projects, and while I am still exploring and
+          learning, I am eager to take on new challenges that help me grow as an engineer. I scored a 9.4
+          CGPA last year, and I believe in being punctual, disciplined, and always open to feedback.
+          <br><br>
+          Beyond tech, I am a creative soul—whether it is pen art, mandala designs, or traditional
+          Madhubani painting. I also enjoy writing blogs and stories, and I am an avid fan of movies and
+          TV series. I have hands-on skills in digital marketing as well, which gives me a unique blend of
+          creativity and strategy.
+          <br><br>
+          I am always excited to collaborate on meaningful projects and look forward to contributing to
+          innovative ideas in tech.
+        </p>
+
+        <!-- Tabs -->
+        <div class="flex space-x-8 mt-10 border-b border-gray-600 pb-4">
+          <button data-tab="skills" class="tabBtn font-medium">Skills</button>
+          <button data-tab="languages" class="tabBtn font-medium">Coding Languages</button>
+          <button data-tab="education" class="tabBtn font-medium">Education</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="skills" class="tabContent mt-6">
+          <ul class="list-disc pl-5 space-y-2">
+            <li><span class="text-pink-600">Web development:</span> Web app development</li>
+            <li><span class="text-pink-600">Software development:</span> Creating Working Softwares</li>
+            <li><span class="text-pink-600">Content writing:</span> Blogs, Articles, Captions</li>
+            <li><span class="text-pink-600">Digital Marketing:</span> Social Media Marketing, LinkedIn Marketing</li>
+          </ul>
+        </div>
+        <div id="languages" class="tabContent hidden mt-6">
+          <ul class="list-disc pl-5 space-y-2">
+            <li><span class="text-pink-600">Frontend development:</span> HTML, CSS, JavaScript</li>
+            <li><span class="text-pink-600">Backend development:</span> Node.js, Python, C#</li>
+            <li><span class="text-pink-600">Software development:</span> C, C++, Core Java</li>
+          </ul>
+        </div>
+        <div id="education" class="tabContent hidden mt-6">
+          <ul class="list-disc pl-5 space-y-2">
+            <li><span class="text-pink-600">2012–2024:</span> St Luke's Senior Secondary School Solan</li>
+            <li><span class="text-pink-600">2024–Present:</span> SRM Institute of Science and Technology, Kattankulathur</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Achievements -->
-  <section id="achievements" class="px-4 py-10">
-    <h2 class="text-2xl font-bold mb-6 text-center">Technical Achievements</h2>
-    <ul class="space-y-4 max-w-2xl mx-auto text-sm">
-      <li>🛠️ Arduino Humidity Display Project completed and tested.</li>
-      <li>💻 Created a full-stack portfolio website.</li>
-      <li>🏆 Won 2nd place in Coding Ninjas mini hackathon.</li>
-    </ul>
-
-    <h2 class="text-2xl font-bold mt-10 mb-6 text-center">Non-Technical Achievements</h2>
-    <ul class="space-y-4 max-w-2xl mx-auto text-sm">
-      <li>📝 Editorial club content writer & organizer.</li>
-      <li>🎭 Organized Campus Quest: A Sherlock Holmes–themed logic event.</li>
-      <li>📢 Volunteer in 10X club leadership training.</li>
-    </ul>
+  <!-- Projects -->
+  <section id="projs" class="py-20 px-10 md:px-20">
+    <h2 class="text-5xl font-bold text-center text-white">My <span class="text-pink-600">Projects</span></h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Netflix Clone -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg group">
+        <img src="images/netfliximg.jpeg" alt="Netflix Clone" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-pink-600 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-2xl font-bold mb-4">Netflix Clone Website</h3>
+          <p class="text-sm mb-4">Fully responsive clone of Netflix with homepage UI and basic video integration. HTML, CSS, JS.</p>
+          <div class="flex space-x-4">
+          </div>
+        </div>
+      </div>
+      <!-- Amazon Clone -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg group">
+        <img src="images/amazonimg.jpeg" alt="Amazon Clone" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-pink-600 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-2xl font-bold mb-4">Amazon Clone Website</h3>
+          <p class="text-sm mb-4">Responsive clone of Amazon with homepage, product, cart, sign-in/up. HTML, CSS, JS.</p>
+          <div class="flex space-x-4">
+          </div>
+        </div>
+      </div>
+      <!-- Arduino Projects -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg group">
+        <img src="images/arduino.jpg" alt="Arduino Projects" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-pink-600 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity overflow-auto">
+          <h3 class="text-2xl font-bold mb-4">Arduino Projects</h3>
+          <ul class="list-disc text-left space-y-2 text-sm">
+            <li><span class="font-semibold">Temperature & Humidity Logger</span> using DHT11 <a href="projects/.../Humidity And Temprature using DHT11/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            <li><span class="font-semibold">Servo Distance Indicator</span> using Servomotor <a href="projects/.../Distance Indicator using ultrasonic Sensor and Servomotor/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            <li><span class="font-semibold">Smart Alarm System</span> using Ultrasonic Sensor <a href="projects/.../Smart Alarm System Using Motion Detection/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            <li><span class="font-semibold">RPM Counter</span> using IR Sensor <a href="projects/.../RPM Counter Using IR Sensor/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="px-4 py-10">
-    <h2 class="text-2xl font-bold mb-6 text-center">Certifications</h2>
-    <div class="space-y-4 max-w-xl mx-auto">
-      <div class="bg-gray-100 rounded-xl p-4 shadow-sm">
-        <p class="text-sm font-medium">Skill Booster – AI Essentials</p>
-        <p class="text-xs text-gray-500">Issued by Google, Oct 2024</p>
+  <section id="techCert" class="py-20 px-10 md:px-20">
+    <h2 class="text-5xl font-bold text-center">Technical <span class="text-pink-600">Achievements</span></h2>
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <!-- Programming -->
+      <div class="bg-gray-800 p-8 rounded-xl flex flex-col items-center space-y-4">
+        <i class="fas fa-code text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Programming & Debugging</h3>
+        <ul class="list-disc pl-5 text-left space-y-2">
+          <li><strong>Java Programming For Beginners</strong><br><span>IBM via Coursera</span><br><a href="https://www.coursera.org/.../verify/UWF54OMN11JU" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Troubleshooting and Debugging Techniques</strong><br><span>Google via Coursera</span><br><a href=".../verify/2QIQMTEL7ABL" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Crash Course On Python</strong><br><span>Google via Coursera</span><br><a href=".../verify/ED69EFGAG3JV" class="text-pink-500">Verify Certificate</a></li>
+        </ul>
       </div>
-      <div class="bg-gray-100 rounded-xl p-4 shadow-sm">
-        <p class="text-sm font-medium">HTML & CSS Web Dev Certificate</p>
-        <p class="text-xs text-gray-500">Issued by GreatStack, Dec 2024</p>
+      <!-- Web/UI -->
+      <div class="bg-gray-800 p-8 rounded-xl flex flex-col items-center space-y-4">
+        <i class="fas fa-crop text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Web & UI Development</h3>
+        <ul class="list-disc pl-5 text-left space-y-2">
+          <li><strong>Introduction to Git and Github</strong><br><span>Google via Coursera</span><br><a href=".../verify/ce69a2315e496a3d/participation" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Website Development</strong><br><span>Skill Academia</span><br><a href=".../verify?id=SA/S14OCT/4182" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Website Designing</strong><br><span>Skill Academia</span><br><a href=".../verify?id=SA/S14OCT/4353" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>UI Designing</strong><br><span>Skill Academia</span><br><a href=".../verify?id=SA/S14OCT/3984" class="text-pink-500">Verify Certificate</a></li>
+        </ul>
+      </div>
+      <!-- Tech Events -->
+      <div class="bg-gray-800 p-8 rounded-xl flex flex-col items-center space-y-4">
+        <i class="fas fa-terminal text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Tech Events</h3>
+        <ul class="list-disc pl-5 text-left space-y-2">
+          <li><strong>Generative AI Workshop</strong><br><span>IIT Madras</span><br><a href=".../1YOQCZFxbNHjLNCiv8vCd70NO4-18huIu/view" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Hackathon on Generative AI</strong><br><span>IIT Madras</span><br><a href=".../1YF7bHkiy1AVGNVMOPd6_G8GBaV2k5lct/view" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>GameGen Workshop</strong><br><span>Coding Ninjas Club</span><br><a href=".../ce69a2315e496a3d/participation" class="text-pink-500">Verify Certificate</a></li>
+          <li><strong>Pythoneers Workshop</strong><br><span>ACM SigCHI SRM</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Technical -->
+  <section id="nontech" class="py-20 px-10 md:px-20 bg-gradient-to-br from-gray-900 to-black text-gray-300">
+    <h2 class="text-5xl font-bold text-center text-white">Non‑Technical <span class="text-pink-600">Achievements</span></h2>
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <div class="bg-gray-800 p-8 rounded-xl text-center space-y-4">
+        <i class="fas fa-comments text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Communication & Creativity</h3>
+        <p><strong>Content Writing</strong> by Skill Academia <br><a href=".../verify?id=SA/S14OCT/3325" class="text-pink-500">View Certificate</a></p>
+        <p><strong>Graphic Designing</strong> by Skill Academia <br><a href=".../verify?id=SA/S14OCT/3777" class="text-pink-500">View Certificate</a></p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-xl text-center space-y-4">
+        <i class="fas fa-bullhorn text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Marketing & Strategy</h3>
+        <p><strong>Content Marketing</strong> by HubSpot <br><a href="..." class="text-pink-500">View Certificate</a></p>
+        <p><strong>Social Media Marketing</strong> by HubSpot & Skill Academia <br><a href=".../3486" class="text-pink-500">View Certificate</a></p>
+        <p><strong>Digital Marketing</strong> by Skill Academia <br><a href=".../3366" class="text-pink-500">View Certificate</a></p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-xl text-center space-y-4">
+        <i class="fas fa-award text-4xl text-pink-600"></i>
+        <h3 class="text-xl font-semibold">Internships & Achievements</h3>
+        <p><strong>Content Writing Internship</strong> at InAmigos Foundation <br><a href="..." class="text-pink-500">View Certificate</a></p>
+        <p><strong>Associate - Editorial Domain</strong> at Coding Ninjas <br><a href="..." class="text-pink-500">View Certificate</a></p>
+        <p><strong>Reuse & Remodel Product</strong> by SRM Lab <br><a href="..." class="text-pink-500">View Certificate</a></p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="px-4 py-10">
-    <h2 class="text-2xl font-bold mb-4 text-center">Contact Me</h2>
-    <form class="space-y-4 max-w-md mx-auto">
-      <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md" />
-      <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md" />
-      <textarea placeholder="Message" class="w-full px-4 py-2 border rounded-md"></textarea>
-      <button class="bg-black text-white px-6 py-2 rounded-md w-full hover:bg-teal-600">Send</button>
-    </form>
+  <section id="contact" class="py-20 px-10 md:px-20">
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full md:w-1/2 mb-10">
+        <h2 class="text-5xl font-bold">Contact <span class="text-pink-600">Me</span></h2>
+        <p class="mt-6 text-lg"><i class="fas fa-envelope text-pink-600 mr-3"></i>malvisood@gmail.com</p>
+        <p class="text-lg"><i class="fas fa-phone text-pink-600 mr-3"></i>7559725240</p>
+        <div class="flex space-x-6 mt-6 text-2xl text-gray-400">
+          <a href="https://www.instagram.com/malvi_sood_14" target="_blank"><i class="fab fa-instagram hover:text-pink-600"></i></a>
+          <a href="https://www.linkedin.com/in/malvi-sood-591706323" target="_blank"><i class="fab fa-linkedin hover:text-pink-600"></i></a>
+          <a href="https://github.com/MalviSood" target="_blank"><i class="fab fa-github hover:text-pink-600"></i></a>
+          <a href="https://www.facebook.com/malvi.sood.3" target="_blank"><i class="fab fa-facebook hover:text-pink-600"></i></a>
+        </div>
+        <a href="cv.pdf" download class="inline-block mt-8 bg-pink-600 hover:bg-pink-700 text-white py-3 px-6 rounded">Download Resume</a>
+      </div>
+      <div class="w-full md:w-1/2">
+        <form name="submit-to-google-sheet" class="space-y-4">
+          <input type="text" name="Name" placeholder="Name" required class="w-full bg-gray-800 p-4 rounded text-white" />
+          <input type="email" name="email" placeholder="Your Email" required class="w-full bg-gray-800 p-4 rounded text-white" />
+          <textarea name="Message" rows="6" placeholder="Your Message" class="w-full bg-gray-800 p-4 rounded text-white"></textarea>
+          <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white py-3 px-6 rounded">Submit</button>
+          <span id="msg" class="block mt-2 text-green-400"></span>
+        </form>
+      </div>
+    </div>
+
+    <footer class="mt-20 py-6 bg-gray-900 text-center text-gray-400">
+      <p>&copy; Malvi Sood. Made with <i class="fas fa-heart text-pink-600"></i> and a lot of effort.</p>
+    </footer>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-white text-center p-4">
-    © 2025 My Portfolio. All rights reserved.
-  </footer>
+  <script>
+    // Tab functionality
+    document.querySelectorAll('.tabBtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tabContent').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.tabBtn').forEach(b => b.classList.remove('border-pink-600'));
+        const id = btn.dataset.tab;
+        document.getElementById(id).classList.remove('hidden');
+        btn.classList.add('border-b-2', 'border-pink-600');
+      });
+    });
+  </script>
+
+  
 
 </body>
 </html>
